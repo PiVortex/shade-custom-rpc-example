@@ -1,5 +1,5 @@
 {
-  "near-rpc-providers": [
+  "nearRpcProviders": [
     {
       "url": "https://rpc1.com",
       "retries": 5,

@@ -1,20 +1,27 @@
 {
   "nearRpcProviders": [
     {
-      "url": "https://rpc1.com",
-      "retries": 5,
-      "backoff": 2,
-      "wait": 1500
+      "connectionInfo": {
+        "url": "https://rpc1.com",
+      },
+      "options": {
+        "retries": 5,
+        "backoff": 2,
+        "wait": 1500
+      }
     },
     {
-      "url": "https://rpc2.com",
-      "headers": {
-        "x-api-key": "your-api-key-here",
-        "another-header": "header-value"
+      "connectionInfo": {
+        "url": "https://rpc2.com",
+        "headers": {
+          "x-api-key": "api-key",
+        }
       },
-      "retries": 3,
-      "backoff": 2,
-      "wait": 1000
+      "options": {
+        "retries": 3,
+        "backoff": 1,
+        "wait": 1000
+      }
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "near-rpc-providers": [
+    {
+      "url": "https://rpc1.com",
+      "retries": 5,
+      "backoff": 2,
+      "wait": 1500
+    },
+    {
+      "url": "https://rpc2.com",
+      "headers": {
+        "x-api-key": "your-api-key-here",
+        "another-header": "header-value"
+      },
+      "retries": 3,
+      "backoff": 2,
+      "wait": 1000
+    }
+  ]
+}
